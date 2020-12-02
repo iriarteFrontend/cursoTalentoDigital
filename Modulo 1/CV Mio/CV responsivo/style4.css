@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url('bg-antofa.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-animation: kenburns-bottom 5s cubic-bezier(0.550, 0.055, 0.675, 0.190) reverse both;
+    animation: kenburns-bottom 5s cubic-bezier(0.550, 0.055, 0.675, 0.190) reverse both;
+}
+
+h1 {
+    text-align: right;
+    margin-top: 2rem;
+    font-size: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+a {
+    text-decoration-line: none;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(224, 43, 19);
+    background-color: rgba(245, 245, 245, 0.103);
+    margin: 2rem;
+    padding-bottom: 1rem;
+}
+
+.avatar {
+
+    border-radius: 50%;
+    position: absolute;
+    right: 10%;
+}
+
+nav {
+    display: none;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    background-color: rgb(247, 0, 0);
+    margin-bottom: 3rem;
+}
+
+nav>a {
+    padding: 0.5rem;
+    color: white;
+}
+
+#experiencia {
+    background-image: url('antofa1.jpg');
+    background-size: cover;
+
+}
+
+
+
+#estudios {
+    background-image: url('antofa2.jpg');
+    background-size: cover;
+
+}
+
+
+
+#licencias {
+    background-image: url('antofa3.jpg');
+    background-size: cover;
+
+}
+
+
+#hobbies {
+    background-image: url('antofa4.jpg');
+    background-size: cover;
+
+}
+
+
+.campos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-right: 20%;
+}
+
+.campo {
+    width: 500px;
+    margin: 2rem;
+
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 3rem;
+
+    }
+
+    body {
+        background-size: contain;
+    }
+
+    nav {
+        display: none;
+        font-size: 2rem;
+        flex-wrap: wrap;
+
+    }
+
+    .campo {
+        width: 300px;
+    }
+
+
+    .volver {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    /*     h1 {
+        font-size: 3rem;
+    }
+ */
+    nav {
+        display: none;
+        font-size: 2rem;
+        flex-wrap: wrap;
+
+    }
+
+    nav>a {
+        padding: 0.5rem;
+
+    }
+
+    .campo {
+        margin-top: 8rem;
+    }
+}
+
+@-webkit-keyframes kenburns-bottom {
+    0% {
+        -webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 84%;
+        transform-origin: 50% 84%;
+    }
+
+    100% {
+        -webkit-transform: scale(1.25) translateY(15px);
+        transform: scale(1.25) translateY(15px);
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom;
+    }
+}
+
+@keyframes kenburns-bottom {
+    0% {
+        -webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 84%;
+        transform-origin: 50% 84%;
+    }
+
+    100% {
+        -webkit-transform: scale(1.25) translateY(15px);
+        transform: scale(1.25) translateY(15px);
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom;
+    }
+}
